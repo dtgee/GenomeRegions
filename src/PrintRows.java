@@ -106,20 +106,7 @@ public class PrintRows {
 		unused.add(1);
 
 		for (ModifiedRegion mRegion : mRegionList) {
-			//			if (prev != null && mRegion.getVal() == prev.getVal()) {
-			//				update(mRegion, unused, inUse, buffer);
-			//			} 
-			//			else if (buffer.size() >= 1) {
-			//				inUse.addAll(buffer);
-			//				buffer.clear();
-			//				update(mRegion, unused, inUse, buffer);
-			//			} 
-			//			else {
-			//				System.out.println(buffer.size());
-			//				inUse.push(buffer.get(0));
 			update(mRegion, unused, inUse, buffer);
-			//			}
-			//			prev = mRegion;
 		}
 	}
 
